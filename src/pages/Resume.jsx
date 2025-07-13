@@ -11,6 +11,9 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 //about data
 
@@ -194,21 +197,30 @@ import { ScrollArea, ScrollBar } from "../components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const Resume = () => {
+
+       useEffect(() => {
+      AOS.init({
+        duration: 2000,
+        once: false,
+      });
+    }, [] );
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
+      // initial={{ opacity: 0 }}
+      // animate={{
+      //   opacity: 1,
+      //   transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      // }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
+          
         >
-          <TabsList>
+          <TabsList data-aos="fade-right">
             <TabsTrigger value="experience">Expereince</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -216,7 +228,7 @@ const Resume = () => {
           </TabsList>
 
           {/*content*/}
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] w-full" data-aos="fade-left" >
             {/*experience*/}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">

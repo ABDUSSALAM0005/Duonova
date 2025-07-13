@@ -47,14 +47,14 @@ const Services = () => {
    <section data-aos="fade-left" className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
     <div className='container mx-auto'>
       <motion.div
-      initial={{opacity:0}}
-      animate={{opacity: 1, transition: {delay:2.4, duration:0.4, ease: "easeIn"},
-        }}
+      // initial={{opacity:0}}
+      // animate={{opacity: 1, transition: {delay:2.4, duration:0.4, ease: "easeIn"},
+      //   }}
       className='grid grid-cols-1 xl:grid-cols-2 gap-[60px]'
       >
      {services.map(( service, index ) => {
       return (
-     <div key={index} className='group'>
+     <div key={index} className='group' data-aos="zoom-in-up">
       {/*top*/}
         <div className='w-full flex justify-between items-center'>
           <div className='text-5xl font-extrabold text-transparent text-outline  transition-all duration-500'>{service.num}</div>

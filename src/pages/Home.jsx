@@ -8,12 +8,13 @@ import Services from "./Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Resume from "./Resume";
+import Work from "./Work";
 
 
 
 const Home = () => {
 
-     useEffect(() => {
+ useEffect(() => {
     AOS.init({
       duration: 2000,
       once: false,
@@ -27,7 +28,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-18">
           {/*text*/}
 
-          <div data-aos="fade-up" className="text-center xl:text-left order-2 xl:order-none">
+          <div data-aos="fade-right" className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">— Creative Tech Studio</span>
             <h1 className="h1 mb-">
             welcome to <br /> <span className="text-accent">Duonova</span>
@@ -61,9 +62,12 @@ const Home = () => {
         <h1 className="h1 text-center text-accent hidden xl:block">Our Services</h1>
       <Services />  
       </div>
-      <div className="pt-30 xl:pt-0" data-aos="zoom-in-up">
+      <div className="pt-30 xl:pt-0">
         <h1 className="h1 text-center text-accent hidden xl:block">Resume</h1>
       <Resume />
+      </div>
+      <div className="pt-30 xl:pt-0">
+        <Work />
       </div>
     </section>
 
