@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Resume from "./Resume";
 import Work from "./Work";
+import  Contact  from "./Contact";
 
 
 
@@ -68,6 +69,10 @@ const Home = () => {
       </div>
       <div className="pt-30 xl:pt-0">
         <Work />
+      </div>
+      <div className="pt-30 xl:pt-0">
+        <h1 className="h2 text-center mb-3 text-accent">Contact Us</h1>
+        <Contact />
       </div>
     </section>
 

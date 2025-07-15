@@ -1,5 +1,4 @@
 import {useEffect} from "react";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
@@ -29,7 +28,7 @@ const Header = () => {
         <div data-aos="fade-left" className="hidden xl:flex items-center gap-8">
           <Nav />
           <NavLink to="/Contact">
-            <Button variant="ghost">hire me</Button>
+            <Button variant="ghost">hire us</Button>
           </NavLink>
 
           {/* mobile nav*/}
