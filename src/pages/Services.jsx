@@ -10,25 +10,25 @@ const services = [
   {
     num: '01',
     title: 'Frontend Web Dev',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea iste,',
+    description: `At Duonova, our talented frontend team brings over 2 years of hands-on experience in crafting beautiful, responsive websites.Whether it's HTML, CSS, JavaScript, Tailwind, or Bootstrap, we build sleek interfaces that work smoothly on any device. We dont just code we create digital experiences that leave a mark.`,
     href:""
   },
   {
     num: '02',
     title: `Social Marketing`,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea iste,',
+    description: `Trying to boost your visibility online? Let Duonova handle it! Our certified experts specialize in SEO, targeted ad campaigns, and strategic content, helping you grow your presence across platforms like Instagram, TikTok, X (Twitter), LinkedIn, and more. With over 3 years of success stories, we turn followers into fans and clicks into clients.`,
     href:""
   },
   {
     num: '03',
     title: 'Graphics Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea iste,',
+    description: `Need eye-catching visuals that speak for your brand? Duonova’s creative design team delivers it all logos, flyers, banners, magazine covers, YouTube thumbnails, channel art, and more. With sharp skills in Photoshop, Illustrator, and other industry tools, our work turns ideas into vibrant visuals that captivate.`,
     href:""
   },
   {
     num: '04',
     title: 'Content Creation',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea iste,',
+    description: `From YouTube videos and ad reels to voiceovers and presentation scripts, Duonova helps you bring your vision to life. Whether you're promoting a product, growing your brand, or simply telling your story, our team offers high-quality video production, scripting, and editing to make your content stand out.`,
     href:""
   },
 ]

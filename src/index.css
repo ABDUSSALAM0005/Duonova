@@ -52,15 +52,15 @@
   }
 
   .cta-text {
-    @apply text-black font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-white font-extrabold flex-1 text-3xl max-md:text-center;
   }
 
    .btn {
     @apply      cursor-pointer        
-     text-white 
-    bg-gradient-to-r from-[#00c6ff] to-[#0072ff] 
-    hover:from-[#00a8e8] hover:to-[#005bb5]
-    focus:ring-4 focus:outline-none focus:ring-blue-300 
+     text-primary 
+    border bg-accent shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50
+    
+    focus:ring-4 focus:outline-none focus:ring-green-900 
     font-medium rounded-lg text-sm 
     w-full sm:w-auto 
     px-5 py-2.5 

@@ -10,7 +10,7 @@ import {
   FaFigma,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiCanva, SiCoreldraw, SiAdobexd } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ import { useEffect } from "react";
 const about = {
   title: "About us",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aliqu wivuwi fhfjjf uiiwyeu doloor jjsh.",
+   `We’re a dynamic digital agency passionate about crafting bold experiences. From stunning visuals and smart code to powerful content and marketing, we help brands grow, connect, and shine. Whether you're starting from scratch or scaling big, we bring creativity and strategy together beautifully.`,
   info: [
     {
       fieldName: "Name",
@@ -147,6 +147,10 @@ const skills = {
       name: "html 5",
     },
     {
+      icon: <SiAdobexd />,
+      name: "Adobe",
+    },
+    {
       icon: <FaCss3 />,
       name: "CSS 3",
     },
@@ -159,8 +163,8 @@ const skills = {
       name: "React",
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <SiCanva />,
+      name: "Canva",
     },
     {
       icon: <FaBootstrap />,
@@ -171,8 +175,8 @@ const skills = {
       name: "TailwindCss",
     },
     {
-      icon: <FaHtml5 />,
-      name: "html 5",
+      icon: <SiCoreldraw />,
+      name: "CorelDraw",
     },
     // {
     //   icon: <SiNextdotjs />,

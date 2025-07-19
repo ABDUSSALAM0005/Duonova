@@ -17,10 +17,12 @@ import { Link } from 'react-router-dom';
 import thumb1 from "../assets/assets/work/thumb1.png"
 import thumb2 from "../assets/assets/work/thumb2.png"
 import thumb3 from "../assets/assets/work/thumb3.png"
+import three from "../assets/assets/work/3d.png"
+import chop from "../assets/assets/work/chopbites.png"
 import WorkSliderBtns from '../components/WorkSliderBtns';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+ 
 const projects = [
   {
     num: "01",
@@ -38,7 +40,7 @@ const projects = [
     title: "project 2",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit natus error minimarehenderit,",
     stack: [{name: "React"}, {name: "TailwindCSS"}, {name: "3Derei"}],
-    image: thumb2,
+    image: three,
     live: "",
     github:"",
   },
@@ -48,7 +50,7 @@ const projects = [
     title: "project 3",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit natus error minimarehenderit,",
     stack: [{name: "Html 5"}, {name: "Bootstrap"}, {name: "javascript"}],
-    image: thumb3,
+    image: chop,
     live: "",
     github:"",
   },
@@ -160,7 +162,7 @@ const Work = () => {
                   ></div>
                   {/*image*/}
                   <div className='relative w-full h-full'>
-                  <img src={project.image} className='w-full h-full object-cover' />
+                  <img src={project.image} className='w-full h-full object-cover ' />
                   </div>
                   </div>
                 </SwiperSlide>;
