@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
 import { FiDownload, FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -12,6 +13,7 @@ import Resume from "./Resume";
 import Work from "./Work";
 import  Contact  from "./Contact";
 import { CTA } from "../components/CTA";
+import { MotionConfig } from "framer-motion";
 
 
 
@@ -27,7 +29,11 @@ const Home = () => {
   return (
 
     <section className="h-full">
-      <div  className="container mx-auto h-full">
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity: 1, transition: {delay:2.4, duration:0.4, ease: "easeIn"},
+        }} 
+      className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-18">
           {/*text*/}
 
@@ -62,7 +68,7 @@ const Home = () => {
             
         </div>
         <Stats/>
-      </div>
+      </motion.div>
     </section>
 
     // </motion.div>
