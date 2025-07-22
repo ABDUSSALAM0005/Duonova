@@ -43,9 +43,9 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 group">
                 <Link
-                 to="/Contact"
-                >Contact Us</Link>
-                <FiPhone className="text-xl group"/>
+                 to="/Resume"
+                >Leran more</Link>
+                {/* <FiPhone className="text-xl group"/> */}
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center 
@@ -62,24 +62,6 @@ const Home = () => {
             
         </div>
         <Stats/>
-      </div>
-      <div className="pt-28" data-aos="zoom-in-up">
-        <h1 className="h1 text-center text-accent hidden xl:block">Our Services</h1>
-      <Services />  
-      </div>
-      <div className="pt-30 xl:pt-0">
-        <h1 className="h1 text-center text-accent hidden xl:block">Resume</h1>
-      <Resume />
-      </div>
-      <div className="pt-30 xl:pt-0">
-        <Work />
-      </div>
-      <div className="pt-30 xl:pt-0">
-        <h1 className="h2 text-center mb-3 text-accent">Contact Us</h1>
-        <Contact />
-      </div>
-      <div>
-        <CTA/>
       </div>
     </section>
 
