@@ -1,12 +1,12 @@
-// components/CountUpWrapper.jsx
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
-const CountUpWrapper = ({ end, duration = 5, delay = 2, children }) => {
+export default function CountUpWrapper({ end, duration = 5, delay = 2, children }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    console.log('🟢 CountUpWrapper mounted for end=', end);
   }, []);
 
   if (!mounted) return null;
@@ -16,6 +16,5 @@ const CountUpWrapper = ({ end, duration = 5, delay = 2, children }) => {
       {children}
     </CountUp>
   );
-};
+}
 
-export default CountUpWrapper;
