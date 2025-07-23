@@ -1,20 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 
-export default function CountUpWrapper({ end, duration = 5, delay = 2, children }) {
+const CountUpWrapper = ({ end, duration = 5, delay = 2, className = "", ...props }) => {
   const [mounted, setMounted] = useState(false);
+  const countUpRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
-    console.log('🟢 CountUpWrapper mounted for end=', end);
   }, []);
 
-  if (!mounted) return null;
-
-  return (
-    <CountUp end={end} duration={duration} delay={delay}>
-      {children}
+  return mounted ? (
+    <CountUp end={end} duration={duration} delay={delay} ref={countUpRef} {...props}>
+      {({ countUpRef }) => (
+        <span ref={countUpRef} className={className}></span>
+      )}
     </CountUp>
-  );
-}
+  ) : null;
+};
 
+export default CountUpWrapper;
