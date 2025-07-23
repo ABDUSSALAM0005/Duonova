@@ -16,7 +16,7 @@ const services = [
   {
     num: '02',
     title: `Social Marketing`,
-    description: `Trying to boost your visibility online? Let Duonova handle it! Our certified experts specialize in SEO, targeted ad campaigns, and strategic content, helping you grow your presence across platforms like Instagram, TikTok, X (Twitter), LinkedIn, and more. With over 3 years of success stories, we turn followers into fans and clicks into clients.`,
+    description: `Trying to boost your visibility online? Let Duonova handle it! Our certified experts specialize in SEO, targeted ad campaigns, and strategic content, helping you grow your presence across platforms like Instagram, TikTok, X, LinkedIn, and more. With over 3 years of success stories, we turn followers into fans and clicks into clients.`,
     href:""
   },
   {
@@ -54,7 +54,7 @@ const Services = () => {
       >
      {services.map(( service, index ) => {
       return (
-     <div key={index} className='group' data-aos="zoom-in-up">
+     <div key={index} className='group'>
       {/*top*/}
         <div className='w-full flex justify-between items-center'>
           <div className='text-5xl font-extrabold text-transparent text-outline  transition-all duration-500'>{service.num}</div>
